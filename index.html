@@ -7,11 +7,14 @@
         <title>Petco</title>
     </head>
     <style>
+        @font-face {
+            font-family: 'Circular';
+            src: url("Circular Font/CircularStd-Bold.ttf");
+        }
         body {
             margin: 0px;
-            font-family: Arial, sans-serif;
+            font-family: 'Circular', Arial, sans-serif;
             background-color: #001952;
-            color: white;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -20,7 +23,16 @@
             height: 100vh;
             width: 100vw;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
         button {
+            font-family: 'Circular', Arial, sans-serif; /* Use Circular as the first choice */
             background-color: transparent;
             border: #6CD9F6 5px solid;
             bottom: 11.5%;
@@ -33,7 +45,7 @@
             transition: all 0.5s ease-in-out;
         }
         button:active {
-            transform: scale(0.95);
+            transform: scale(1.05);
             background-color: #6CD9F6;
             color: white;
         }
@@ -45,8 +57,10 @@
         
     </style>
     <body>
-        <img src="v7_top.png">
-        <button>Same Day Delivery</button>
-        <img src="v7_bottom1.png">
+        <div class="container">
+            <img src="v7_top.png">
+                <button>Same Day Delivery</button>
+            <img class="nav" src="v7_bottom1.png">
+        </div>
     </body>
 </html>
