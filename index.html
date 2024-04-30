@@ -10,9 +10,6 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #001952;
-            background-image: url('V7_1_BACKGROUND_NO_BUTTON.png');
-            background-repeat: no-repeat;
-            background-size: contain;
             color: white;
             text-align: center;
             display: flex;
@@ -21,21 +18,9 @@
             height: 100vh;
             width: 100vw;
         }
-        .product{
-            width: 100%;
-            padding: 20px;
-            margin: 20px;
-            position: relative;
-            box-sizing: border-box;
-        }
-        .product img {
-            width: 100%;
-            height: auto;
-        }
         button {
             background-color: transparent;
             border: #6CD9F6 5px solid;
-            position: absolute;
             bottom: 11.5%;
             border-radius: 50px;
             color: #6CD9F6;
@@ -45,15 +30,21 @@
             font-size: x-large;
             transition: transform 0.3s ease;
         }
-
         button:active {
             transform: scale(0.95);
             background-color: #6CD9F6;
             color: white;
         }
+        img{
+            width: 100%;
+            height: auto;
+        
+        }
         
     </style>
     <body>
+        <img src="v7_top.png">
         <button>Same Day Delivery</button>
+        <img src="v7_bottom.png">
     </body>
 </html>
